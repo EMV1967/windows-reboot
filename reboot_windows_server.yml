@@ -1,6 +1,6 @@
 ---
 - name: Playbook to reboot Windows servers
-  hosts: localhost
+  hosts: all
   gather_facts: true
   tasks: 
   - name: Rebooting Windows servers
@@ -8,4 +8,3 @@
       pre_reboot_delay: 2 
       reboot_timeout: 600
       msg: "Reboot initiated by Ansible Tower"
-      
